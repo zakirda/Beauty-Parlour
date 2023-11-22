@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1776px;
+            height: 373px;
+            position: absolute;
+            top: 178px;
+            left: 10px;
+            z-index: 1;
+        }
+        .auto-style2 {
+            width: 1776px;
+            height: 137px;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            z-index: 1;
+        }
+        .auto-style3 {
+            width: 658px;
+            height: 81px;
+            position: absolute;
+            top: 31px;
+            left: 560px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="auto-style1">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+        <div class="auto-style2">
+            <asp:Menu ID="Menu1" runat="server" CssClass="auto-style3" ForeColor="Black" Orientation="Horizontal" RenderingMode="Table">
+                <Items>
+                    <asp:MenuItem Text="HOME" Value="HOME"></asp:MenuItem>
+                    <asp:MenuItem Text="BOOKING" Value="BOOKING"></asp:MenuItem>
+                    <asp:MenuItem Text="CONTACT" Value="CONTACT"></asp:MenuItem>
+                    <asp:MenuItem Text="LOGIN" Value="LOGIN"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+        
+    </form>
+    
+</body>
+</html>
